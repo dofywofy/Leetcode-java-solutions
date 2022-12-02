@@ -1,7 +1,15 @@
 //https://leetcode.com/problems/set-matrix-zeroes/
 
-class Solution {
-    public void setZeroes(int[][] matrix) {
+import java.util.Arrays;
+
+public class SetZeroes {
+    public static void main(String[] args) {
+        int[][] matrix = {{1, 1, 1}, {1, 0, 1}, {1, 1, 1}};
+        setZeroes(matrix);
+        System.out.println(Arrays.deepToString(matrix));
+    }
+
+    static void setZeroes(int[][] matrix) {
         int m = matrix.length, n = matrix[0].length;
         int rowsArray[]= new int[m];
         int colsArray[]= new int[n];
